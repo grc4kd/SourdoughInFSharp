@@ -1,57 +1,66 @@
-﻿// Learn more about F# at http://fsharp.org
+﻿open System
 
-open System
+type Ingredients =
+    {
+        Starter : float
+        Water : float
+        Flour : float
+        Salt : float
+    }
+
+let Hydration starter starterHydration water flour =
+    let sD = starter / (starterHydration + 1.0)
+    let sW = (starterHydration * starter) / (starterHydration + 1.0)
+    let wet = sW + water
+    let dry = sD + flour
+    wet / dry
+
+let Components starter starterHydration desiredHydration desiredMass =
+    let sD = starter / (starterHydration + 1.0)
+    let sW = (starterHydration * starter) / (starterHydration + 1.0)
+    let flour = (desiredMass - sD - (desiredHydration * sD)) / (desiredHydration + 1.0)
+    {
+        Starter = starter
+        Water = desiredMass - sD - sW - flour
+        Flour = flour
+        Salt = (desiredMass * 0.909090) / 100.0
+    }
 
 [<EntryPoint>]
 let main argv =
     printf "Calculate hydration (h) or flour/water/salt components (c)?";
     let calcBranch = Console.ReadLine();
 
-    if calcBranch = "h" then
+    match calcBranch with
+    | "h" ->
         printf "Starter (g):";
-        let starter = Console.ReadLine();
+        let starter = float (Console.ReadLine());
         printf "Starter hydration (%%):";
-        let starterHydration = Console.ReadLine();
+        let starterHydration = float (Console.ReadLine()) / 100.0;
         printf "Water (g):";
-        let water = Console.ReadLine();
+        let water = float (Console.ReadLine());
         printf "Flour (g):";
-        let flour = Console.ReadLine();
+        let flour = float (Console.ReadLine());
 
-        let s = (float)starter;
-        let sH = (float)starterHydration / 100.0;
-        let w = (float)water;
-        let f = (float)flour;
+        let hydration = Hydration starter starterHydration water flour;
 
-        let sD = s / (sH + 1.0);
-        let sW = (sH * s) / (sH + 1.0);
-        let wet = sW + w;
-        let dry = sD + f;
-        let hydration = wet / dry;
-
+        printfn "Dough has a mass of %f" (starter + water + flour)
         printfn "Dough has %f%% hydration" (hydration * 100.0);
-    elif calcBranch = "c" then
+    | "c" ->
         printf "Starter (g):";
-        let starter = Console.ReadLine();
+        let starter = float (Console.ReadLine());
         printf "Starter hydration (%%):";
-        let starterHydration = Console.ReadLine();
+        let starterHydration = float (Console.ReadLine()) / 100.0;
         printf "Desired dough hydration (%%):"
-        let hydration = Console.ReadLine();
+        let desiredHydration = float (Console.ReadLine()) / 100.0;
         printf "Desired dough mass (g):";
-        let mass = Console.ReadLine();
+        let desiredMass = float (Console.ReadLine());
 
-        let s = (float)starter;
-        let sH = (float)starterHydration / 100.0;
-        let h = (float)hydration / 100.0;
-        let m = (float)mass;
+        let ingredients = Components starter starterHydration desiredHydration desiredMass
 
-        let sD = s / (sH + 1.0);
-        let sW = (sH * s) / (sH + 1.0);
-        let flour = (m - sD - (h * sD)) / (h + 1.0);
-        let water = m - sD - sW - flour;
-        let salt = (m * 0.909090) / 100.0;
-
-        printfn "flour (g):%f" flour;
-        printfn "water (g):%f" water;
-        printfn "salt (tsp):%f" (salt / 2.3);
+        printfn "water (g):%f" ingredients.Water;
+        printfn "flour (g):%f" ingredients.Flour;
+        printfn "salt (tsp):%f" (ingredients.Salt / 2.3);
+    | _ -> printfn "Invalid option, please choose from the available functions."
     
     0 // return an integer exit code
