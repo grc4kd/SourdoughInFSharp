@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/App/App.fsproj": {}
+  },
+  "projects": {
+    "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/App/App.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/App/App.fsproj",
+        "projectName": "App",
+        "projectPath": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/App/App.fsproj",
+        "packagesPath": "/home/house/.nuget/packages/",
+        "outputPath": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/App/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/house/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/sdk/8.0.107/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/Library.fsproj": {
+                "projectPath": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/Library.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.102, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/Library.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/Library.fsproj",
+        "projectName": "Library",
+        "projectPath": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/Library.fsproj",
+        "packagesPath": "/home/house/.nuget/packages/",
+        "outputPath": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/house/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/sdk/8.0.107/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.102, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

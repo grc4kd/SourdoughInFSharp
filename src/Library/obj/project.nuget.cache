@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MiswDO4+olioH9o5MhePjNySAi0jtBFs9lxLnUQy7eoDCnJ1RJb8pfH5vydF0dVnfnPZ81GSi0nqTUUtTsqBdQ==",
+  "success": true,
+  "projectFilePath": "/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/Library.fsproj",
+  "expectedPackageFiles": [
+    "/home/house/.nuget/packages/fsharp.core/8.0.102/fsharp.core.8.0.102.nupkg.sha512"
+  ],
+  "logs": []
+}

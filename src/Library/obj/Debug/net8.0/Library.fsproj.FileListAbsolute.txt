@@ -1,0 +1,13 @@
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/bin/Debug/net8.0/Library.deps.json
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/bin/Debug/net8.0/Library.dll
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/bin/Debug/net8.0/Library.pdb
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/bin/Debug/net8.0/Library.xml
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.fsproj.AssemblyReference.cache
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.AssemblyInfoInputs.cache
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.AssemblyInfo.fs
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.fsproj.CoreCompileInputs.cache
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.dll
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/refint/Library.dll
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.xml
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/Library.pdb
+/home/house/github/SourdoughInFSharp_redux/SourdoughInFSharp/src/Library/obj/Debug/net8.0/ref/Library.dll
